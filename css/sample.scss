@@ -423,7 +423,7 @@ h1{
     
     @media screen and (-webkit-min-device-pixel-ratio:2),
                       (min-resolution: 2dppx) {
-        background-image: url("../images/news/sub_cover@2pxx.jpg");                      
+        background-image: url("../images/news/sub_cover@2x.jpg");                      
     }
     
     .container {
@@ -543,7 +543,7 @@ h1{
                         
                         @media screen and (-webkit-min-device-pixel-ratio:2),
                                           (min-resolution: 2dppx) {
-                            background-image: url("../images/news/side_arrow.png");
+                            background-image: url("../images/news/side_arrow@2x.png");
                         }
                         
                         a {
