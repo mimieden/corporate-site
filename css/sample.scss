@@ -170,7 +170,7 @@ header {
     
     @media screen and (-webkit-min-device-pixel-ratio:2),
                       (min-resolution: 2dppx) {
-        background-image: url("../images/top/cover@2pxx.jpg");                      
+        background-image: url("../images/top/cover@2x.jpg");                      
     }
     
     @media (min-width: 551px) {
@@ -187,7 +187,7 @@ header {
 
 /* Service Area */
 #service_area {
-    padding: 20px;  //padding-top:20pxから変更
+    padding-top: 20px; 
     
     @media (min-width:551px) {
         padding-top: 30px;
@@ -205,12 +205,12 @@ header {
         .service_title {
             @include fontsize(18);
             font-weight: bold;
-            margin: 8px;
+            margin-top: 8px;
         }
         
         p{
             @include fontsize(15);
-            margin: 10px;
+            margin-top: 10px;
         }
         
         @media (min-width: 551px) {
@@ -313,6 +313,11 @@ footer {
             margin: 0 auto;
         }
         
+        .foot_address {
+            @include fontsize(16);
+            padding-top: 10px;
+        }
+        
         .foot_navi {
             margin-top: 20px;
             
@@ -344,13 +349,13 @@ footer {
     .copy {
         text-align: center;
         @include fontsize(11);
-        color: #b2elea;
+        color: #b2e1ea;
     }
     
     @media (min-width: 551px) {
         padding-top: 30px;
         
-        .foot_adress {
+        .foot_address {
             padding: 0px;
             @include fontsize(12);
         }
@@ -407,11 +412,10 @@ h1{
 }
 // 表示調整
 
-/*-- News Page––––––––––––––––––––––––––––––––––––––--*/
-/* Sub Cover */
+/*-- News Page & Company Info Sub Cover–––––––––––––--*/
 #sub_cover {
     text-align: center;
-    padding: 80px 0;
+    padding: 40px 0;
     
     //retina_bg
     background-image: url("../images/news/sub_cover.jpg");
@@ -423,8 +427,6 @@ h1{
     }
     
     .container {
-        padding: 0;
-        margin: 0;
         h2 {
             text-align: center;
             color: white;
@@ -438,8 +440,8 @@ h1{
     }
     
     @media (min-width: 551px) {
+        padding: 80px 0;
         .container {
-            padding: 0;
             h2 {
                 text-align: center;
                 color: white;
@@ -455,7 +457,7 @@ h1{
 }
 // Sub Cover
 
-/* Contents for News & Company Info */
+/*-- News Page & Company Info Contents-–––––––––––––--*/
 #contents {
     padding-top: 20px;
     
@@ -472,6 +474,10 @@ h1{
                 font-weight: bold;
                 padding-bottom: 15px;
                 margin-bottom: 20px;
+            }
+            // Company Info用の調整
+            h2.company_title {
+                margin: 0;
             }
             
             /* News Only */
@@ -520,10 +526,11 @@ h1{
                     padding: 15px;
                     margin: 0;
                 }
-                /* News Only */
+                
                 ul {
                     margin: 0 0 25px 0;
                     li {
+                        /*text-decoration: none;*/
                         list-style: none;
                         display: block;
                         border-bottom: 1px solid #e5e5e5;
@@ -538,10 +545,12 @@ h1{
                                           (min-resolution: 2dppx) {
                             background-image: url("../images/news/side_arrow.png");
                         }
+                        
+                        a {
+                            color: #339fd1;
+                            text-decoration: none;
+                        }
                     }
-                }
-                /* Company Info Only */
-                table {
                 }
             }
         }
@@ -565,12 +574,14 @@ h1{
                 
                 h2 {
                     padding: 0 0 20px 0;
+                    @include fontsize(20); 
                 }
                 
                 ul {
                     li {
                         padding: 0 0 5px 0;
                         span {
+                            display: inline;
                             padding: 0 10px 0 0;
                             margin: 0;
                         }
