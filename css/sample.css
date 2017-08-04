@@ -272,7 +272,7 @@ h1 {
   background-size: cover; }
   @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     #sub_cover {
-      background-image: url("../images/news/sub_cover@2pxx.jpg"); } }
+      background-image: url("../images/news/sub_cover@2x.jpg"); } }
   #sub_cover .container h2 {
     text-align: center;
     color: white;
@@ -368,7 +368,7 @@ h1 {
             background-size: 4px 8px; }
             @media screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
               #contents .container #sidebar .pc_sidemenu ul li {
-                background-image: url("../images/news/side_arrow.png"); } }
+                background-image: url("../images/news/side_arrow@2x.png"); } }
             #contents .container #sidebar .pc_sidemenu ul li a {
               color: #339fd1;
               text-decoration: none; }
